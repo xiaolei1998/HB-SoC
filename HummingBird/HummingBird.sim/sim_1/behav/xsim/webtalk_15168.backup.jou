@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jun 14 13:01:36 2022
+# Process ID: 15168
+# Current directory: /home/michelle/Desktop/Xilinx/vivado/HummingBird/HummingBird.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/michelle/Desktop/Xilinx/vivado/HummingBird/HummingBird.sim/sim_1/behav/xsim/xsim.dir/tb_top_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/michelle/Desktop/Xilinx/vivado/HummingBird/HummingBird.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/michelle/Desktop/Xilinx/vivado/HummingBird/HummingBird.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/michelle/Desktop/Xilinx/vivado/HummingBird/HummingBird.sim/sim_1/behav/xsim/xsim.dir/tb_top_behav/webtalk/xsim_webtalk.tcl -notrace
