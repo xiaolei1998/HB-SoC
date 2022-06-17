@@ -60,6 +60,9 @@ set_property -dict { PACKAGE_PIN AB25    IOSTANDARD LVCMOS33  } [get_ports { uar
 
 set_property -dict { PACKAGE_PIN Y10    IOSTANDARD LVCMOS18 } [get_ports { ck_rst }]; #button 0
 
+##test signal 
+set_property -dict { PACKAGE_PIN AF18   IOSTANDARD LVCMOS33 } [get_ports { slwclk_test }];
+set_property -dict { PACKAGE_PIN AF20   IOSTANDARD LVCMOS33 } [get_ports { clk16M_test }];
 
 set_property KEEPER true [get_ports jd_5];
 

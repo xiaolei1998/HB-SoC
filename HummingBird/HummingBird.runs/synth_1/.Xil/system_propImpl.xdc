@@ -45,3 +45,7 @@ set_property src_info {type:XDC file:1 line:58 export:INPUT save:INPUT read:READ
 set_property -dict { PACKAGE_PIN AB25    IOSTANDARD LVCMOS33  } [get_ports { uart_txd_in }]; #IO_L14N_T2_SRCC_16 Sch=uart_txd_in
 set_property src_info {type:XDC file:1 line:61 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN Y10    IOSTANDARD LVCMOS18 } [get_ports { ck_rst }]; #button 0
+set_property src_info {type:XDC file:1 line:64 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN AF18   IOSTANDARD LVCMOS33 } [get_ports { slwclk_test }];
+set_property src_info {type:XDC file:1 line:65 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN AF20   IOSTANDARD LVCMOS33 } [get_ports { clk16M_test }];

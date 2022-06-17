@@ -2,7 +2,6 @@
 
 module system
 (
-  //input wire CLK100MHZ, ///Michelle!!!!!!!!!!!!!!!!!!!
   input wire CLK200MHZ_P,///Michelle!!!!!!!!!!!!!!!!!!!
   input wire CLK200MHZ_N,///Michelle!!!!!!!!!!!!!!!!!!!
   input wire ck_rst,
@@ -58,7 +57,13 @@ module system
   inout wire jd_2, // TCK
   inout wire jd_4, // TDI
   inout wire jd_5, // TMS
-  input wire jd_6 // SRST_n
+  input wire jd_6, // SRST_n
+  
+  
+  
+  //test 
+  output wire slwclk_test,
+  output wire clk16M_test
  
  
  
@@ -1109,6 +1114,12 @@ module system
   assign sw_2 = dut_io_pads_dbgmode1_n_i_ival;
   assign sw_3 = dut_io_pads_dbgmode2_n_i_ival;
   //
+  
+  
+  
+  /*test*/
+  assign slwclk_test = slowclk;
+  assign clk16M_test = clk_16M;
 
   e203_soc_top dut
   (

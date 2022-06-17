@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date             : Wed Jun 15 14:44:47 2022
+| Date             : Wed Jun 15 16:56:57 2022
 | Host             : ubuntu running 64-bit Ubuntu 18.04.6 LTS
 | Command          : report_power -file system_power_routed.rpt -pb system_power_summary_routed.pb -rpx system_power_routed.rpx
 | Design           : system
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.259        |
+| Total On-Chip Power (W)  | 0.261        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.131        |
+| Dynamic (W)              | 0.132        |
 | Device Static (W)        | 0.128        |
 | Effective TJA (C/W)      | 1.9          |
 | Max Ambient (C)          | 84.5         |
@@ -65,9 +65,9 @@ Table of Contents
 | Signals                  |     0.001 |    14597 |       --- |             --- |
 | Block RAM                |     0.009 |       32 |       265 |           12.08 |
 | MMCM                     |     0.109 |        1 |         5 |           20.00 |
-| I/O                      |     0.006 |       17 |       250 |            6.80 |
+| I/O                      |     0.008 |       19 |       250 |            7.60 |
 | Static Power             |     0.128 |          |           |                 |
-| Total                    |     0.259 |          |           |                 |
+| Total                    |     0.261 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,7 +79,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Vccint    |       1.000 |     0.038 |       0.016 |      0.022 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.075 |       0.062 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -160,7 +160,7 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| system                   |     0.131 |
+| system                   |     0.132 |
 |   IOBUF_jtag_TDO         |     0.001 |
 |   dut                    |     0.014 |
 |     u_e203_subsys_top    |     0.014 |

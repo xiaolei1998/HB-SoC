@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date                      : Wed Jun 15 14:42:56 2022
+| Date                      : Wed Jun 15 16:55:35 2022
 | Host                      : ubuntu running 64-bit Ubuntu 18.04.6 LTS
 | Command                   : report_io -file system_io_placed.rpt
 | Design                    : system
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            24 |
+|            26 |
 +---------------+
 
 
@@ -208,9 +208,9 @@ Table of Contents
 | AF15       |              | High Range       | IO_L16P_T2_12           | User IO       |             |      12 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
 | AF16       |              |                  | GND                     | GND           |             |         |            |      |                     |                      |       0.0 |            |           |          |      |                  |              |                   |              |
 | AF17       |              | High Range       | IO_L18N_T2_12           | User IO       |             |      12 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
-| AF18       |              | High Range       | IO_L18N_T2_13           | User IO       |             |      13 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
+| AF18       | slwclk_test  | High Range       | IO_L18N_T2_13           | OUTPUT        | LVCMOS33    |      13 |         12 | SLOW |                     |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | AF19       |              | High Range       | IO_L15P_T2_DQS_13       | User IO       |             |      13 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
-| AF20       |              | High Range       | IO_L15N_T2_DQS_13       | User IO       |             |      13 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
+| AF20       | clk16M_test  | High Range       | IO_L15N_T2_DQS_13       | OUTPUT        | LVCMOS33    |      13 |         12 | SLOW |                     |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | AF21       |              | High Range       | VCCO_13                 | VCCO          |             |      13 |            |      |                     |                      |      3.30 |            |           |          |      |                  |              |                   |              |
 | AF22       |              | High Range       | IO_L7N_T1_13            | User IO       |             |      13 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
 | AF23       |              | High Range       | IO_L8N_T1_13            | User IO       |             |      13 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
