@@ -63,7 +63,7 @@ all: Helloworld.elf secondary-outputs
 Helloworld.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GNU RISC-V Cross C++ Linker'
-	riscv-nuclei-elf-g++ -march=rv32imac -mabi=ilp32 -mcmodel=medany -mno-save-restore -O2 -ffunction-sections -fdata-sections -fno-common  -g -T "C:\Users\Michelle ZHANG\Documents\Nuclei\workspace\Helloworld\hbird_sdk\SoC\hbird\Board\hbird_eval\Source\GCC\gcc_hbird_ilm.ld" -nostartfiles -Xlinker --gc-sections -Wl,-Map,"Helloworld.map" --specs=nano.specs --specs=nosys.specs -u _isatty -u _write -u _sbrk -u _read -u _close -u _fstat -u _lseek -o "Helloworld.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	riscv-nuclei-elf-g++ -march=rv32imac -mabi=ilp32 -mcmodel=medany -mno-save-restore -O2 -ffunction-sections -fdata-sections -fno-common --specs=nano.specs --specs=nosys.specs -u _printf_float  -g -T "C:\Users\Michelle ZHANG\Documents\Nuclei\Nucleitest2\Helloworld\hbird_sdk\SoC\hbird\Board\hbird_eval\Source\GCC\gcc_hbird_ilm.ld" -nostartfiles -Xlinker --gc-sections -Wl,-Map,"Helloworld.map" -u _isatty -u _write -u _sbrk -u _read -u _close -u _fstat -u _lseek -o "Helloworld.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
