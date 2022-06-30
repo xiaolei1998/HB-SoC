@@ -1,3 +1,9 @@
 AXI interface were added and attached to the Periphrial bus;
 AXI GPIO IP cores were used to demonstrate it is working;
 E203核已打包，有block design，通过AXI接口控制AXI GPIO实现点灯。
+
+
+Folder:
+HummingBird: Source hardware descriptive language code for E203 SoC
+Helloword:   Souce  C code to control AXI GPIO
+IP:          Packed E203 IP repo
