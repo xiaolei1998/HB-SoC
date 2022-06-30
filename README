@@ -1,0 +1,3 @@
+AXI interface were added and attached to the Periphrial bus;
+AXI GPIO IP cores were used to demonstrate it is working;
+E203核已打包，有block design，通过AXI接口控制AXI GPIO实现点灯。
