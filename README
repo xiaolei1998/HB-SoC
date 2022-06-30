@@ -1,0 +1,3 @@
+This is original Hbird E203 SoC (with no Axi Peripheral), all top module related pins/io are set
+Bitstream can be download to the FPGA board and a simple .C code by controling the GPIO can be demonstrated on the board. 
+无Block design，未打包，无AXI外设，以直接操作GPIO基地址的方式点灯
