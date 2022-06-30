@@ -251,9 +251,6 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/michelle/Desktop/Xilinx/vivado/HummingBird/src/arty-config.xdc
-set_property used_in_implementation false [get_files /home/michelle/Desktop/Xilinx/vivado/HummingBird/src/arty-config.xdc]
-
 read_xdc /home/michelle/Desktop/Xilinx/vivado/HummingBird/src/arty-master.xdc
 set_property used_in_implementation false [get_files /home/michelle/Desktop/Xilinx/vivado/HummingBird/src/arty-master.xdc]
 

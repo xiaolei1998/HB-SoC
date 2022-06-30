@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Wed Jun 15 14:37:53 2022
+| Date         : Fri Jun 24 16:06:35 2022
 | Host         : ubuntu running 64-bit Ubuntu 18.04.6 LTS
 | Command      : report_utilization -file system_utilization_synth.rpt -pb system_utilization_synth.pb
 | Design       : system
@@ -30,16 +30,16 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 8906 |     0 |     78600 | 11.33 |
-|   LUT as Logic             | 8833 |     0 |     78600 | 11.24 |
+| Slice LUTs*                | 9118 |     0 |     78600 | 11.60 |
+|   LUT as Logic             | 9045 |     0 |     78600 | 11.51 |
 |   LUT as Memory            |   73 |     0 |     26600 |  0.27 |
 |     LUT as Distributed RAM |   72 |     0 |           |       |
 |     LUT as Shift Register  |    1 |     0 |           |       |
-| Slice Registers            | 6410 |     0 |    157200 |  4.08 |
-|   Register as Flip Flop    | 6410 |     0 |    157200 |  4.08 |
+| Slice Registers            | 6622 |     0 |    157200 |  4.21 |
+|   Register as Flip Flop    | 6622 |     0 |    157200 |  4.21 |
 |   Register as Latch        |    0 |     0 |    157200 |  0.00 |
-| F7 Muxes                   |  279 |     0 |     39300 |  0.71 |
-| F8 Muxes                   |   36 |     0 |     19650 |  0.18 |
+| F7 Muxes                   |  300 |     0 |     39300 |  0.76 |
+| F8 Muxes                   |   40 |     0 |     19650 |  0.20 |
 +----------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
@@ -56,10 +56,10 @@ Table of Contents
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 296   |          Yes |           - |          Set |
-| 3529  |          Yes |           - |        Reset |
+| 307   |          Yes |           - |          Set |
+| 3539  |          Yes |           - |        Reset |
 | 51    |          Yes |         Set |            - |
-| 2534  |          Yes |       Reset |            - |
+| 2725  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -93,7 +93,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   15 |     0 |       250 |  6.00 |
+| Bonded IOB                  |  198 |     0 |       250 | 79.20 |
 | Bonded IPADs                |    0 |     0 |        14 |  0.00 |
 | Bonded OPADs                |    0 |     0 |         8 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |       130 |  0.00 |
@@ -155,26 +155,26 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     | 4304 |                 LUT |
-| FDCE     | 3529 |        Flop & Latch |
-| FDRE     | 2534 |        Flop & Latch |
-| LUT5     | 2412 |                 LUT |
-| LUT4     | 1432 |                 LUT |
-| LUT3     | 1158 |                 LUT |
-| LUT2     |  740 |                 LUT |
-| FDPE     |  296 |        Flop & Latch |
-| MUXF7    |  279 |               MuxFx |
+| LUT6     | 4440 |                 LUT |
+| FDCE     | 3539 |        Flop & Latch |
+| FDRE     | 2725 |        Flop & Latch |
+| LUT5     | 2415 |                 LUT |
+| LUT4     | 1520 |                 LUT |
+| LUT3     | 1179 |                 LUT |
+| LUT2     |  741 |                 LUT |
+| FDPE     |  307 |        Flop & Latch |
+| MUXF7    |  300 |               MuxFx |
 | CARRY4   |  222 |          CarryLogic |
+| OBUF     |  147 |                  IO |
 | RAMD32   |  108 |  Distributed Memory |
-| LUT1     |   75 |                 LUT |
+| LUT1     |   65 |                 LUT |
 | FDSE     |   51 |        Flop & Latch |
+| IBUF     |   50 |                  IO |
+| MUXF8    |   40 |               MuxFx |
 | RAMS32   |   36 |  Distributed Memory |
-| MUXF8    |   36 |               MuxFx |
 | RAMB36E1 |   32 |        Block Memory |
 | OBUFT    |   11 |                  IO |
-| IBUF     |   11 |                  IO |
 | PULLUP   |    3 |                 I/O |
-| OBUF     |    3 |                  IO |
 | BUFG     |    2 |               Clock |
 | SRL16E   |    1 |  Distributed Memory |
 +----------+------+---------------------+
