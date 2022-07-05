@@ -1,0 +1,367 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/michelle/Desktop/Xilinx/IP'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/michelle/Desktop/Xilinx/repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top design_1_wrapper -part xc7z030fbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z030'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z030'
+INFO: [Device 21-403] Loading part xc7z030fbg676-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 129861
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2399.719 ; gain = 0.000 ; free physical = 510 ; free virtual = 2372
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_HBIRD_E203_0_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/.Xil/Vivado-129829-ubuntu/realtime/design_1_HBIRD_E203_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_HBIRD_E203_0_0' (1#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/.Xil/Vivado-129829-ubuntu/realtime/design_1_HBIRD_E203_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_3' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/.Xil/Vivado-129829-ubuntu/realtime/design_1_axi_bram_ctrl_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_3' (2#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/.Xil/Vivado-129829-ubuntu/realtime/design_1_axi_bram_ctrl_0_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_1_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/.Xil/Vivado-129829-ubuntu/realtime/design_1_axi_bram_ctrl_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_1_0' (3#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/.Xil/Vivado-129829-ubuntu/realtime/design_1_axi_bram_ctrl_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_cdma_0_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/.Xil/Vivado-129829-ubuntu/realtime/design_1_axi_cdma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_cdma_0_0' (4#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/.Xil/Vivado-129829-ubuntu/realtime/design_1_axi_cdma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_sg_awvalid' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+WARNING: [Synth 8-7071] port 'm_axi_sg_awaddr' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+WARNING: [Synth 8-7071] port 'm_axi_sg_awlen' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+WARNING: [Synth 8-7071] port 'm_axi_sg_awsize' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+WARNING: [Synth 8-7071] port 'm_axi_sg_awburst' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+WARNING: [Synth 8-7071] port 'm_axi_sg_awprot' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+WARNING: [Synth 8-7071] port 'm_axi_sg_awcache' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+WARNING: [Synth 8-7071] port 'm_axi_sg_wvalid' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+WARNING: [Synth 8-7071] port 'm_axi_sg_wdata' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+WARNING: [Synth 8-7071] port 'm_axi_sg_wstrb' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+WARNING: [Synth 8-7071] port 'm_axi_sg_wlast' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+WARNING: [Synth 8-7071] port 'm_axi_sg_bready' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+WARNING: [Synth 8-7071] port 'm_axi_sg_arvalid' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+WARNING: [Synth 8-7071] port 'm_axi_sg_araddr' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+WARNING: [Synth 8-7071] port 'm_axi_sg_arlen' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+WARNING: [Synth 8-7071] port 'm_axi_sg_arsize' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+WARNING: [Synth 8-7071] port 'm_axi_sg_arburst' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+WARNING: [Synth 8-7071] port 'm_axi_sg_arprot' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+WARNING: [Synth 8-7071] port 'm_axi_sg_arcache' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+WARNING: [Synth 8-7071] port 'm_axi_sg_rready' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+WARNING: [Synth 8-7071] port 'cdma_tvect_out' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+WARNING: [Synth 8-7023] instance 'axi_cdma_0' of module 'design_1_axi_cdma_0_0' has 79 connections declared, but only 58 given [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:436]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_0_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:747]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1CA5Z32' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:2506]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/.Xil/Vivado-129829-ubuntu/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (5#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/.Xil/Vivado-129829-ubuntu/realtime/design_1_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:2725]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:2725]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:2725]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_0' has 56 connections declared, but only 53 given [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:2725]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1CA5Z32' (6#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:2506]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_I4GRPB' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:3039]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_I4GRPB' (7#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:3039]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_O7FAN0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:3757]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/.Xil/Vivado-129829-ubuntu/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (8#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/.Xil/Vivado-129829-ubuntu/realtime/design_1_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_pc_1' is unconnected for instance 'auto_pc' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:4028]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_pc_1' is unconnected for instance 'auto_pc' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:4028]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_1' has 70 connections declared, but only 68 given [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:4028]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_O7FAN0' (9#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:3757]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_2' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/.Xil/Vivado-129829-ubuntu/realtime/design_1_xbar_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_2' (10#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/.Xil/Vivado-129829-ubuntu/realtime/design_1_xbar_2_stub.v:6]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_arregion' does not match port width (8) of module 'design_1_xbar_2' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:1398]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_awregion' does not match port width (8) of module 'design_1_xbar_2' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:1409]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_0_0' (11#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:747]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_1_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:1460]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1FDLJBY' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:2781]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1FDLJBY' (12#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_NZRVUN' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:3283]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_NZRVUN' (13#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:3283]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_HS4N6K' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:3541]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_HS4N6K' (14#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:3541]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1CMTC59' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:4099]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1CMTC59' (15#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:4099]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/.Xil/Vivado-129829-ubuntu/realtime/design_1_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (16#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/.Xil/Vivado-129829-ubuntu/realtime/design_1_xbar_1_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axi_bid' of module 'design_1_xbar_1' is unconnected for instance 'xbar' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:2431]
+WARNING: [Synth 8-7071] port 's_axi_rid' of module 'design_1_xbar_1' is unconnected for instance 'xbar' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:2431]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_xbar_1' is unconnected for instance 'xbar' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:2431]
+WARNING: [Synth 8-7071] port 'm_axi_awqos' of module 'design_1_xbar_1' is unconnected for instance 'xbar' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:2431]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_xbar_1' is unconnected for instance 'xbar' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:2431]
+WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'design_1_xbar_1' is unconnected for instance 'xbar' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:2431]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_1' has 78 connections declared, but only 72 given [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:2431]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_1_0' (17#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:1460]
+INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_0_2' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/.Xil/Vivado-129829-ubuntu/realtime/design_1_blk_mem_gen_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_0_2' (18#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/.Xil/Vivado-129829-ubuntu/realtime/design_1_blk_mem_gen_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_1_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/.Xil/Vivado-129829-ubuntu/realtime/design_1_blk_mem_gen_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_1_0' (19#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/.Xil/Vivado-129829-ubuntu/realtime/design_1_blk_mem_gen_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1'b1 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (20#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (21#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (22#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (23#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2399.719 ; gain = 0.000 ; free physical = 1240 ; free virtual = 3103
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2399.719 ; gain = 0.000 ; free physical = 1296 ; free virtual = 3160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2399.719 ; gain = 0.000 ; free physical = 1296 ; free virtual = 3160
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2399.719 ; gain = 0.000 ; free physical = 1289 ; free virtual = 3152
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_xbar_2/design_1_xbar_2/design_1_xbar_2_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_xbar_2/design_1_xbar_2/design_1_xbar_2_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/xbar'
+Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s00_couplers/auto_pc'
+Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/m00_couplers/auto_pc'
+Finished Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/m00_couplers/auto_pc'
+Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_3/design_1_axi_bram_ctrl_0_3/design_1_axi_bram_ctrl_0_3_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_3/design_1_axi_bram_ctrl_0_3/design_1_axi_bram_ctrl_0_3_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
+Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_2/design_1_blk_mem_gen_0_2/design_1_blk_mem_gen_0_1_in_context.xdc] for cell 'design_1_i/blk_mem_gen_0'
+Finished Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_2/design_1_blk_mem_gen_0_2/design_1_blk_mem_gen_0_1_in_context.xdc] for cell 'design_1_i/blk_mem_gen_0'
+Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_0_3_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_1'
+Finished Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_0_3_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_1'
+Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_1_0/design_1_blk_mem_gen_1_0/design_1_blk_mem_gen_0_1_in_context.xdc] for cell 'design_1_i/blk_mem_gen_1'
+Finished Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_1_0/design_1_blk_mem_gen_1_0/design_1_blk_mem_gen_0_1_in_context.xdc] for cell 'design_1_i/blk_mem_gen_1'
+Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_axi_cdma_0_0/design_1_axi_cdma_0_0/design_1_axi_cdma_0_0_in_context.xdc] for cell 'design_1_i/axi_cdma_0'
+Finished Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_axi_cdma_0_0/design_1_axi_cdma_0_0/design_1_axi_cdma_0_0_in_context.xdc] for cell 'design_1_i/axi_cdma_0'
+Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/xbar'
+Finished Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/xbar'
+Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc] for cell 'design_1_i/HBIRD_E203_0'
+Finished Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc] for cell 'design_1_i/HBIRD_E203_0'
+Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.srcs/constrs_1/new/AXI_cons.xdc]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o_0'. [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.srcs/constrs_1/new/AXI_cons.xdc:20]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/HBIRD_E203_0/inst/IOBUF_jtag_TCK/O'. [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.srcs/constrs_1/new/AXI_cons.xdc:59]
+Finished Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.srcs/constrs_1/new/AXI_cons.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.srcs/constrs_1/new/AXI_cons.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.srcs/constrs_1/new/AXI_cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2415.637 ; gain = 0.000 ; free physical = 1199 ; free virtual = 3062
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2415.637 ; gain = 0.000 ; free physical = 1199 ; free virtual = 3062
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 2415.637 ; gain = 15.918 ; free physical = 1269 ; free virtual = 3132
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z030fbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 2415.637 ; gain = 15.918 ; free physical = 1269 ; free virtual = 3132
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK200MHZ_N_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK200MHZ_N_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK200MHZ_P_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK200MHZ_P_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for btn_1_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for btn_1_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for btn_2_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for btn_2_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for btn_3_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for btn_3_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for ja_0_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ja_0_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for ja_1_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ja_1_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for jd_0_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for jd_0_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for jd_2_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for jd_2_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for jd_4_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for jd_4_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for jd_5_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for jd_5_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for led_3_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for led_3_0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0/design_1_HBIRD_E203_0_0_in_context.xdc, line 26).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0/m00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_bram_ctrl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/blk_mem_gen_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_bram_ctrl_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/blk_mem_gen_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_cdma_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_1/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/HBIRD_E203_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 2415.637 ; gain = 15.918 ; free physical = 1269 ; free virtual = 3132
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 2415.637 ; gain = 15.918 ; free physical = 1269 ; free virtual = 3133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 400 (col length:80)
+BRAMs: 530 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 2415.637 ; gain = 15.918 ; free physical = 1254 ; free virtual = 3122
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 2428.637 ; gain = 28.918 ; free physical = 1131 ; free virtual = 2999
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 2428.637 ; gain = 28.918 ; free physical = 1131 ; free virtual = 2999
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 2448.676 ; gain = 48.957 ; free physical = 1131 ; free virtual = 2998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2454.613 ; gain = 54.895 ; free physical = 1131 ; free virtual = 2999
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2454.613 ; gain = 54.895 ; free physical = 1131 ; free virtual = 2999
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2454.613 ; gain = 54.895 ; free physical = 1131 ; free virtual = 2999
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2454.613 ; gain = 54.895 ; free physical = 1131 ; free virtual = 2999
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2454.613 ; gain = 54.895 ; free physical = 1131 ; free virtual = 2999
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2454.613 ; gain = 54.895 ; free physical = 1131 ; free virtual = 2999
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------+----------+
+|      |BlackBox name              |Instances |
++------+---------------------------+----------+
+|1     |design_1_xbar_2            |         1|
+|2     |design_1_auto_pc_0         |         1|
+|3     |design_1_auto_pc_1         |         1|
+|4     |design_1_xbar_1            |         1|
+|5     |design_1_HBIRD_E203_0_0    |         1|
+|6     |design_1_axi_bram_ctrl_0_3 |         1|
+|7     |design_1_axi_bram_ctrl_1_0 |         1|
+|8     |design_1_axi_cdma_0_0      |         1|
+|9     |design_1_blk_mem_gen_0_2   |         1|
+|10    |design_1_blk_mem_gen_1_0   |         1|
++------+---------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------+------+
+|      |Cell                     |Count |
++------+-------------------------+------+
+|1     |design_1_HBIRD_E203_0    |     1|
+|2     |design_1_auto_pc         |     2|
+|4     |design_1_axi_bram_ctrl_0 |     1|
+|5     |design_1_axi_bram_ctrl_1 |     1|
+|6     |design_1_axi_cdma_0      |     1|
+|7     |design_1_blk_mem_gen_0   |     1|
+|8     |design_1_blk_mem_gen_1   |     1|
+|9     |design_1_xbar            |     2|
+|11    |IBUF                     |     1|
+|12    |OBUF                     |     2|
++------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2454.613 ; gain = 54.895 ; free physical = 1131 ; free virtual = 2999
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 2454.613 ; gain = 38.977 ; free physical = 1189 ; free virtual = 3057
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2454.621 ; gain = 54.895 ; free physical = 1190 ; free virtual = 3057
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2454.621 ; gain = 0.000 ; free physical = 1276 ; free virtual = 3143
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2462.551 ; gain = 0.000 ; free physical = 1215 ; free virtual = 3083
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+62 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2462.551 ; gain = 62.922 ; free physical = 1351 ; free virtual = 3219
+INFO: [Common 17-1381] The checkpoint '/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jul  5 11:33:52 2022...

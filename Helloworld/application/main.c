@@ -3,109 +3,91 @@
 #include <time.h>
 #include <stdlib.h>
 #include "hbird_sdk_soc.h"
-#include "hbird_gpio.h"
-#include "board_hbird_eval.h"
 
-void print_misa(void)
-{
-    CSR_MISA_Type misa_bits = (CSR_MISA_Type) __RV_CSR_READ(CSR_MISA);
-    static char misa_chars[30];
-    uint8_t index = 0;
-    if (misa_bits.b.mxl == 1) {
-        misa_chars[index++] = '3';
-        misa_chars[index++] = '2';
-    } else if (misa_bits.b.mxl == 2) {
-        misa_chars[index++] = '6';
-        misa_chars[index++] = '4';
-    } else if (misa_bits.b.mxl == 3) {
-        misa_chars[index++] = '1';
-        misa_chars[index++] = '2';
-        misa_chars[index++] = '8';
-    }
-    if (misa_bits.b.i) {
-        misa_chars[index++] = 'I';
-    }
-    if (misa_bits.b.m) {
-        misa_chars[index++] = 'M';
-    }
-    if (misa_bits.b.a) {
-        misa_chars[index++] = 'A';
-    }
-    if (misa_bits.b.b) {
-        misa_chars[index++] = 'B';
-    }
-    if (misa_bits.b.c) {
-        misa_chars[index++] = 'C';
-    }
-    if (misa_bits.b.e) {
-        misa_chars[index++] = 'E';
-    }
-    if (misa_bits.b.f) {
-        misa_chars[index++] = 'F';
-    }
-    if (misa_bits.b.d) {
-        misa_chars[index++] = 'D';
-    }
-    if (misa_bits.b.q) {
-        misa_chars[index++] = 'Q';
-    }
-    if (misa_bits.b.h) {
-        misa_chars[index++] = 'H';
-    }
-    if (misa_bits.b.j) {
-        misa_chars[index++] = 'J';
-    }
-    if (misa_bits.b.l) {
-        misa_chars[index++] = 'L';
-    }
-    if (misa_bits.b.n) {
-        misa_chars[index++] = 'N';
-    }
-    if (misa_bits.b.s) {
-        misa_chars[index++] = 'S';
-    }
-    if (misa_bits.b.p) {
-        misa_chars[index++] = 'P';
-    }
-    if (misa_bits.b.t) {
-        misa_chars[index++] = 'T';
-    }
-    if (misa_bits.b.u) {
-        misa_chars[index++] = 'U';
-    }
-    if (misa_bits.b.x) {
-        misa_chars[index++] = 'X';
-    }
+#define SOC_LED_3_GPIO_OFS          14
+#define SOC_LED_3_GPIO_MASK         (1<<SOC_LED_3_GPIO_OFS)
 
-    misa_chars[index++] = '\0';
 
-    printf("MISA: RV%s\r\n", misa_chars);
+
+#define BRAM_CDMA_CTRL0_BASE		(0x10040000)
+#define BRAM_CDMA_CTRL1_BASE 		(0x10041000)
+#define CDMA_BASE					(0x10042000)
+#define CDMA_CTRL					(0x0000)
+#define CDMA_STATUS					(0x0004)
+#define CDMA_SA						(0x0018)
+#define CDMA_DA						(0x0020)
+#define CDMA_BTT					(0x0028)
+
+
+
+void plic_CDMA_interrput_handler(){
+
+	//fixed the bug for E203; interrupt will trigger 2 times, ignore the second one
+	static int interrupt = 1;
+	if(interrupt++ % 2 == 1){
+		return;
+	}
+
+
+	printf("-------------------CDMA move from-------------\n");
+	int * bram_ptr = (int *)BRAM_CDMA_CTRL0_BASE;
+	for(int i=0; i < 10; i++, bram_ptr++){
+		printf("Addr: %x      value: %d \n", bram_ptr, *bram_ptr);
+	}
+
+	//clear interrupt
+	*(unsigned int *)(CDMA_BASE + CDMA_STATUS) |= (1<<12);
+
+
+	printf("-------------------CDMA move complete to-------------\n");
+	int *bram_ptr_b = (int *)BRAM_CDMA_CTRL1_BASE;
+	for(int i=0; i < 10; i++, bram_ptr_b++){
+		printf("Addr: %x      value: %d \n", bram_ptr_b, *bram_ptr_b);
+	}
 }
 
-int main(void)
-{
-    srand(__get_rv_cycle()  | __get_rv_instret() | __RV_CSR_READ(CSR_MCYCLE));
-    uint32_t rval = rand();
-    rv_csr_t misa = __RV_CSR_READ(CSR_MISA);
+int main(){
 
-    printf("MISA: 0x%lx\r\n", misa);
-    print_misa();
+	printf("-------------------CDMA move initially from-------------\n");
+	int * bram_ptr = (int *)BRAM_CDMA_CTRL0_BASE;
+	for(int i=0; i < 10; i++, bram_ptr++){
+		*bram_ptr = i;
+		printf("Addr: %x      value: %d \n", bram_ptr, *bram_ptr);
 
-    for (int i = 0; i < 20; i ++) {
-        printf("%d: Hello World From RISC-V Processor!\r\n", i);
-    }
-
-    gpio_enable_output(GPIO, SOC_LED_3_GPIO_MASK);
-
-    while(1){
-    	gpio_write(GPIO, SOC_LED_3_GPIO_MASK, 1);
-    	delay_1ms(300);
-    	gpio_write(GPIO, SOC_LED_3_GPIO_MASK, 0);
-    	delay_1ms(300);
-    }
+	}
 
 
 
-    return 0;
+	printf("-------------------CDMA move initially to-------------\n");
+	int *bram_ptr_b = (int *)BRAM_CDMA_CTRL1_BASE;
+	for(int i=0; i < 10; i++, bram_ptr_b++){
+		printf("Addr: %x      value: %d \n", bram_ptr_b, *bram_ptr_b);
+
+	}
+
+
+	//Open the interrupt
+	PLIC_Init(__PLIC_INTNUM);
+	PLIC_Register_IRQ(PLIC_USR_1_IRQn,1,plic_CDMA_interrput_handler);
+	__enable_irq();
+
+	//step 1: Check the status of CDMA engine
+	if(*(unsigned int *)(CDMA_BASE + CDMA_STATUS) & (1<<1) != 1){
+		printf("CDMA Engine is not idle, wait 1 ms\n");
+		delay_1ms(300);
+	}
+
+	*(unsigned int *)(CDMA_BASE + CDMA_CTRL) |= (1 << 12);  //step 2: enable the on-complete interrupt
+	*(unsigned int *)(CDMA_BASE + CDMA_SA) = BRAM_CDMA_CTRL0_BASE;  //Step 3: write the start address
+	*(unsigned int *)(CDMA_BASE + CDMA_DA) = BRAM_CDMA_CTRL1_BASE;  //Step 4: write the destination address
+	*(unsigned int *)(CDMA_BASE + CDMA_BTT) = 40;			//Step 5: write the length
+
+
+
+	while(1);
+
 }
+
+
+
 

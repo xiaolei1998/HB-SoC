@@ -1,2 +1,0 @@
-reset_sys.vhd,vhdl,xil_defaultlib,../../../../HummingBird.gen/sources_1/ip/reset_sys/sim/reset_sys.vhd,
-glbl.v,Verilog,xil_defaultlib,glbl.v

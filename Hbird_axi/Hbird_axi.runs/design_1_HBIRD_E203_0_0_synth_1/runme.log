@@ -1,0 +1,1482 @@
+
+*** Running vivado
+    with args -log design_1_HBIRD_E203_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_HBIRD_E203_0_0.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source design_1_HBIRD_E203_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/michelle/Desktop/Xilinx/IP'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/michelle/Desktop/Xilinx/repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top design_1_HBIRD_E203_0_0 -part xc7z030fbg676-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z030'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z030'
+INFO: [Device 21-403] Loading part xc7z030fbg676-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 111261
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2398.688 ; gain = 0.000 ; free physical = 1224 ; free virtual = 3151
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_HBIRD_E203_0_0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/synth/design_1_HBIRD_E203_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'system' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/system.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mmcm' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/mmcm/mmcm.v:71]
+INFO: [Synth 8-6157] synthesizing module 'mmcm_clk_wiz' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/mmcm/mmcm_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32998]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (1#1) [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32998]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 4.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 5.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 95.375000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 50 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: double 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'mmcm_clk_wiz' (4#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/mmcm/mmcm_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mmcm' (5#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/mmcm/mmcm.v:71]
+INFO: [Synth 8-6157] synthesizing module 'clkdivider' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/clkdivider.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'clkdivider' (6#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/clkdivider.v:2]
+INFO: [Synth 8-638] synthesizing module 'reset_sys' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/synth/reset_sys.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/synth/reset_sys.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+INFO: [Synth 8-3491] module 'SRL16' declared at '/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018]
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (7#1) [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (8#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (9#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (10#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (11#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (12#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'reset_sys' (13#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/synth/reset_sys.vhd:74]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (14#1) [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+INFO: [Synth 8-6157] synthesizing module 'PULLUP' [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:69810]
+INFO: [Synth 8-6155] done synthesizing module 'PULLUP' (15#1) [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:69810]
+INFO: [Synth 8-6157] synthesizing module 'e203_soc_top' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_soc_top.v:19]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_top' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_subsys_top.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_main' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_subsys_main.v:32]
+INFO: [Synth 8-6157] synthesizing module 'sirv_ResetCatchAndSync_2' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_ResetCatchAndSync_2.v:19]
+INFO: [Synth 8-6157] synthesizing module 'sirv_AsyncResetRegVec_129' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_AsyncResetRegVec_129.v:19]
+INFO: [Synth 8-6157] synthesizing module 'sirv_AsyncResetReg' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_AsyncResetReg.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_AsyncResetReg' (16#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_AsyncResetReg.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_AsyncResetRegVec_129' (17#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_AsyncResetRegVec_129.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_ResetCatchAndSync_2' (18#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_ResetCatchAndSync_2.v:19]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_hclkgen' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_subsys_hclkgen.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_pll' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_subsys_pll.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_pll' (19#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_subsys_pll.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_hclkgen_rstsync' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_subsys_hclkgen_rstsync.v:29]
+	Parameter RST_SYNC_LEVEL bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_hclkgen_rstsync' (20#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_subsys_hclkgen_rstsync.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_pllclkdiv' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_subsys_pllclkdiv.v:31]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:87]
+	Parameter DW bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr' (21#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:87]
+	Parameter DW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized0' (21#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6157] synthesizing module 'e203_clkgate' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_clkgate.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'e203_clkgate' (22#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_clkgate.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_pllclkdiv' (23#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_subsys_pllclkdiv.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_gfcm' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_subsys_gfcm.v:31]
+	Parameter SYNC_LEVEL bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_gfcm' (24#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_subsys_gfcm.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_hclkgen' (25#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_subsys_hclkgen.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_cpu_top' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_cpu_top.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_cpu' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_cpu.v:30]
+	Parameter MASTER bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'e203_reset_ctrl' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_reset_ctrl.v:29]
+	Parameter MASTER bound to: 1 - type: integer 
+	Parameter RST_SYNC_LEVEL bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'e203_reset_ctrl' (26#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_reset_ctrl.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_clk_ctrl' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_clk_ctrl.v:30]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffr' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:209]
+	Parameter DW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffr' (27#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:209]
+INFO: [Synth 8-6155] done synthesizing module 'e203_clk_ctrl' (28#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_clk_ctrl.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_irq_sync' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_irq_sync.v:29]
+	Parameter MASTER bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_sync' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:99]
+	Parameter DP bound to: 2 - type: integer 
+	Parameter DW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_sync' (29#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'e203_irq_sync' (30#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_irq_sync.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_extend_csr' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_extend_csr.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'e203_extend_csr' (31#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_extend_csr.v:32]
+INFO: [Synth 8-6157] synthesizing module 'e203_core' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_core.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_ifu' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_ifu.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_ifu_ifetch' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_ifu_ifetch.v:29]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffrs' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:177]
+	Parameter DW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffrs' (32#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:177]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized1' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:87]
+	Parameter DW bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized1' (32#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized2' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:87]
+	Parameter DW bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized2' (32#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized3' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:87]
+	Parameter DW bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized3' (32#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6157] synthesizing module 'e203_ifu_minidec' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_ifu_minidec.v:28]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_decode' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_decode.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_decode' (33#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_decode.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_ifu_minidec' (34#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_ifu_minidec.v:28]
+INFO: [Synth 8-6157] synthesizing module 'e203_ifu_litebpu' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_ifu_litebpu.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'e203_ifu_litebpu' (35#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_ifu_litebpu.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'e203_ifu_ifetch' (36#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_ifu_ifetch.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_ifu_ift2icb' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_ifu_ift2icb.v:30]
+	Parameter ICB_STATE_WIDTH bound to: 2 - type: integer 
+	Parameter ICB_STATE_IDLE bound to: 2'b00 
+	Parameter ICB_STATE_1ST bound to: 2'b01 
+	Parameter ICB_STATE_WAIT2ND bound to: 2'b10 
+	Parameter ICB_STATE_2ND bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_bypbuf' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:306]
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 33 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:381]
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 33 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+	Parameter DW bound to: 33 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl' (37#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflrs' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:40]
+	Parameter DW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflrs' (38#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo' (39#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_bypbuf' (40#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:306]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized4' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:87]
+	Parameter DW bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized4' (40#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+	Parameter DW bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized0' (40#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized1' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+	Parameter DW bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized1' (40#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'e203_ifu_ift2icb' (41#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_ifu_ift2icb.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'e203_ifu' (42#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_ifu.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_regfile' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_regfile.v:28]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized2' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+	Parameter DW bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized2' (42#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_regfile' (43#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_regfile.v:28]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_disp' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_disp.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_disp' (44#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_disp.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_oitf' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_oitf.v:29]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized3' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+	Parameter DW bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized3' (44#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized4' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+	Parameter DW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized4' (44#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_oitf' (45#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_oitf.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_alu.v:32]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_csrctrl' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_alu_csrctrl.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_csrctrl' (46#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_alu_csrctrl.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_bjp' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_alu_bjp.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_bjp' (47#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_alu_bjp.v:32]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_lsuagu' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_alu_lsuagu.v:32]
+	Parameter ICB_STATE_WIDTH bound to: 4 - type: integer 
+	Parameter ICB_STATE_IDLE bound to: 4'b0000 
+	Parameter ICB_STATE_1ST bound to: 4'b0001 
+	Parameter ICB_STATE_WAIT2ND bound to: 4'b0010 
+	Parameter ICB_STATE_2ND bound to: 4'b0011 
+	Parameter ICB_STATE_AMOALU bound to: 4'b0100 
+	Parameter ICB_STATE_AMORDY bound to: 4'b0101 
+	Parameter ICB_STATE_WBCK bound to: 4'b0110 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized5' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:87]
+	Parameter DW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized5' (47#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_lsuagu' (48#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_alu_lsuagu.v:32]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_rglr' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_alu_rglr.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_rglr' (49#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_alu_rglr.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_muldiv' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_alu_muldiv.v:32]
+	Parameter MULDIV_STATE_WIDTH bound to: 3 - type: integer 
+	Parameter MULDIV_STATE_0TH bound to: 3'b000 
+	Parameter MULDIV_STATE_EXEC bound to: 3'b001 
+	Parameter MULDIV_STATE_REMD_CHCK bound to: 3'b010 
+	Parameter MULDIV_STATE_QUOT_CORR bound to: 3'b011 
+	Parameter MULDIV_STATE_REMD_CORR bound to: 3'b100 
+	Parameter EXEC_CNT_W bound to: 6 - type: integer 
+	Parameter EXEC_CNT_1 bound to: 6'b000001 
+	Parameter EXEC_CNT_16 bound to: 6'b010000 
+	Parameter EXEC_CNT_32 bound to: 6'b100000 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized6' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:87]
+	Parameter DW bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized6' (49#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_muldiv' (50#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_alu_muldiv.v:32]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_dpath' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_alu_dpath.v:29]
+	Parameter DPATH_MUX_WIDTH bound to: 85 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_dpath' (51#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_alu_dpath.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu' (52#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_alu.v:32]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_longpwbck' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_longpwbck.v:30]
+WARNING: [Synth 8-693] zero replication count - replication ignored [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_longpwbck.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_longpwbck' (53#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_longpwbck.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_wbck' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_wbck.v:30]
+WARNING: [Synth 8-693] zero replication count - replication ignored [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_wbck.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_wbck' (54#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_wbck.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_commit' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_commit.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_branchslv' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_branchslv.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_branchslv' (55#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_branchslv.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_excp' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_excp.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_excp' (56#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_excp.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_commit' (57#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_commit.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_csr' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_csr.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_csr' (58#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu_csr.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu' (59#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_exu.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_lsu' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_lsu.v:28]
+INFO: [Synth 8-6157] synthesizing module 'e203_lsu_ctrl' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_lsu_ctrl.v:28]
+	Parameter LSU_ARBT_I_NUM bound to: 2 - type: integer 
+	Parameter LSU_ARBT_I_PTR_W bound to: 1 - type: integer 
+	Parameter USR_W bound to: 39 - type: integer 
+	Parameter USR_PACK_EXCL bound to: 0 - type: integer 
+	Parameter SPLT_FIFO_W bound to: 44 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_arbt' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_icbs.v:37]
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter USR_W bound to: 39 - type: integer 
+	Parameter ARBT_SCHEME bound to: 0 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 0 - type: integer 
+	Parameter ARBT_NUM bound to: 2 - type: integer 
+	Parameter ALLOW_0CYCL_RSP bound to: 0 - type: integer 
+	Parameter ARBT_PTR_W bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:28]
+	Parameter CUT_READY bound to: 0 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage' (60#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_arbt' (61#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_icbs.v:37]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage__parameterized0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:28]
+	Parameter CUT_READY bound to: 0 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 44 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized5' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+	Parameter DW bound to: 44 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized5' (61#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage__parameterized0' (61#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'e203_lsu_ctrl' (62#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_lsu_ctrl.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'e203_lsu' (63#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_lsu.v:28]
+INFO: [Synth 8-6157] synthesizing module 'e203_biu' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_biu.v:29]
+	Parameter BIU_ARBT_I_NUM bound to: 2 - type: integer 
+	Parameter BIU_ARBT_I_PTR_W bound to: 1 - type: integer 
+	Parameter BIU_SPLT_I_NUM_0 bound to: 4 - type: integer 
+	Parameter BIU_SPLT_I_NUM_1 bound to: 5 - type: integer 
+	Parameter BIU_SPLT_I_NUM_2 bound to: 6 - type: integer 
+	Parameter BIU_SPLT_I_NUM bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_arbt__parameterized0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_icbs.v:37]
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter ARBT_SCHEME bound to: 0 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter ARBT_NUM bound to: 2 - type: integer 
+	Parameter ALLOW_0CYCL_RSP bound to: 0 - type: integer 
+	Parameter ARBT_PTR_W bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage__parameterized1' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:28]
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage__parameterized1' (63#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_arbt__parameterized0' (63#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_icbs.v:37]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_buffer' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_icbs.v:351]
+	Parameter OUTS_CNT_W bound to: 1 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter CMD_CUT_READY bound to: 1 - type: integer 
+	Parameter RSP_CUT_READY bound to: 1 - type: integer 
+	Parameter CMD_DP bound to: 1 - type: integer 
+	Parameter RSP_DP bound to: 1 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter CMD_PACK_W bound to: 78 - type: integer 
+	Parameter RSP_PACK_W bound to: 35 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo__parameterized0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:381]
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 78 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized6' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+	Parameter DW bound to: 78 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized6' (63#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized0' (63#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo__parameterized1' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:381]
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 35 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized7' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+	Parameter DW bound to: 35 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized7' (63#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized1' (63#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_buffer' (64#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_icbs.v:351]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_splt' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_icbs.v:648]
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter SPLT_NUM bound to: 6 - type: integer 
+	Parameter SPLT_PTR_1HOT bound to: 1 - type: integer 
+	Parameter SPLT_PTR_W bound to: 6 - type: integer 
+	Parameter ALLOW_DIFF bound to: 0 - type: integer 
+	Parameter ALLOW_0CYCL_RSP bound to: 1 - type: integer 
+	Parameter VLD_MSK_PAYLOAD bound to: 0 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage__parameterized2' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:28]
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized8' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+	Parameter DW bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized8' (64#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage__parameterized2' (64#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_splt' (65#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_icbs.v:648]
+INFO: [Synth 8-6155] done synthesizing module 'e203_biu' (66#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_biu.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_core' (67#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_core.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_itcm_ctrl' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_itcm_ctrl.v:31]
+	Parameter ITCM_ARBT_I_NUM bound to: 2 - type: integer 
+	Parameter ITCM_ARBT_I_PTR_W bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_n2w' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_icbs.v:503]
+	Parameter AW bound to: 16 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 0 - type: integer 
+	Parameter X_W bound to: 32 - type: integer 
+	Parameter Y_W bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_n2w' (68#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_icbs.v:503]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_arbt__parameterized1' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_icbs.v:37]
+	Parameter AW bound to: 16 - type: integer 
+	Parameter DW bound to: 64 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter ARBT_SCHEME bound to: 0 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 0 - type: integer 
+	Parameter ARBT_NUM bound to: 2 - type: integer 
+	Parameter ALLOW_0CYCL_RSP bound to: 0 - type: integer 
+	Parameter ARBT_PTR_W bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_arbt__parameterized1' (68#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_icbs.v:37]
+INFO: [Synth 8-6157] synthesizing module 'sirv_sram_icb_ctrl' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_sram_icb_ctrl.v:29]
+	Parameter DW bound to: 64 - type: integer 
+	Parameter MW bound to: 8 - type: integer 
+	Parameter AW bound to: 16 - type: integer 
+	Parameter AW_LSB bound to: 3 - type: integer 
+	Parameter USR_W bound to: 2 - type: integer 
+	Parameter BUF_CMD_PACK_W bound to: 91 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_bypbuf__parameterized0' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:306]
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 91 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo__parameterized2' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:381]
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 91 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized9' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+	Parameter DW bound to: 91 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized9' (68#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized2' (68#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_bypbuf__parameterized0' (68#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:306]
+INFO: [Synth 8-6157] synthesizing module 'sirv_1cyc_sram_ctrl' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_1cyc_sram_ctrl.v:29]
+	Parameter DW bound to: 64 - type: integer 
+	Parameter MW bound to: 8 - type: integer 
+	Parameter AW bound to: 16 - type: integer 
+	Parameter AW_LSB bound to: 3 - type: integer 
+	Parameter USR_W bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage__parameterized3' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:28]
+	Parameter CUT_READY bound to: 0 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage__parameterized3' (68#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_1cyc_sram_ctrl' (69#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_1cyc_sram_ctrl.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_sram_icb_ctrl' (70#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_sram_icb_ctrl.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_itcm_ctrl' (71#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_itcm_ctrl.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_dtcm_ctrl' [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_dtcm_ctrl.v:31]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter DTCM_ARBT_I_NUM bound to: 2 - type: integer 
+	Parameter DTCM_ARBT_I_PTR_W bound to: 1 - type: integer 
+	Parameter AW bound to: 16 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter ARBT_SCHEME bound to: 0 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 0 - type: integer 
+	Parameter ARBT_NUM bound to: 2 - type: integer 
+	Parameter ALLOW_0CYCL_RSP bound to: 0 - type: integer 
+	Parameter ARBT_PTR_W bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_arbt__parameterized2' (71#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_icbs.v:37]
+	Parameter DW bound to: 32 - type: integer 
+	Parameter MW bound to: 4 - type: integer 
+	Parameter AW bound to: 16 - type: integer 
+	Parameter AW_LSB bound to: 2 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter BUF_CMD_PACK_W bound to: 54 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 54 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 54 - type: integer 
+	Parameter DW bound to: 54 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized10' (71#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized3' (71#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_bypbuf__parameterized1' (71#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_gnrl_bufs.v:306]
+	Parameter DW bound to: 32 - type: integer 
+	Parameter MW bound to: 4 - type: integer 
+	Parameter AW bound to: 16 - type: integer 
+	Parameter AW_LSB bound to: 2 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_1cyc_sram_ctrl__parameterized0' (71#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_1cyc_sram_ctrl.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_sram_icb_ctrl__parameterized0' (71#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_sram_icb_ctrl.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_dtcm_ctrl' (72#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_dtcm_ctrl.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'e203_cpu' (73#1) [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/e203_cpu.v:30]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter DP bound to: 8192 - type: integer 
+	Parameter DW bound to: 64 - type: integer 
+	Parameter FORCE_X2ZERO bound to: 0 - type: integer 
+	Parameter MW bound to: 8 - type: integer 
+	Parameter AW bound to: 13 - type: integer 
+	Parameter DP bound to: 8192 - type: integer 
+	Parameter FORCE_X2ZERO bound to: 1'b0 
+	Parameter DW bound to: 64 - type: integer 
+	Parameter MW bound to: 8 - type: integer 
+	Parameter AW bound to: 13 - type: integer 
+	Parameter DP bound to: 16384 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter FORCE_X2ZERO bound to: 1 - type: integer 
+	Parameter MW bound to: 4 - type: integer 
+	Parameter AW bound to: 14 - type: integer 
+	Parameter DP bound to: 16384 - type: integer 
+	Parameter FORCE_X2ZERO bound to: 1'b0 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter MW bound to: 4 - type: integer 
+	Parameter AW bound to: 14 - type: integer 
+	Parameter PLIC_IRQ_NUM bound to: 55 - type: integer 
+	Parameter PLIC_PRIO_WIDTH bound to: 3 - type: integer 
+	Parameter PLIC_IRQ_NUM bound to: 55 - type: integer 
+	Parameter PLIC_IRQ_NUM_LOG2 bound to: 6 - type: integer 
+	Parameter PLIC_ICB_RSP_FLOP bound to: 1 - type: integer 
+	Parameter PLIC_IRQ_I_FLOP bound to: 1 - type: integer 
+	Parameter PLIC_IRQ_O_FLOP bound to: 1 - type: integer 
+	Parameter PLIC_PEND_ARRAY bound to: 2 - type: integer 
+	Parameter DW bound to: 55 - type: integer 
+	Parameter DW bound to: 6 - type: integer 
+	Parameter DW bound to: 3 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter CMD_PACK_W bound to: 65 - type: integer 
+	Parameter RSP_PACK_W bound to: 33 - type: integer 
+	Parameter ICB_FIFO_DP bound to: 2 - type: integer 
+	Parameter ICB_FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter SPLT_FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter SPLT_FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter O0_BASE_ADDR bound to: 268435456 - type: integer 
+	Parameter O0_BASE_REGION_LSB bound to: 15 - type: integer 
+	Parameter O1_BASE_ADDR bound to: 268468224 - type: integer 
+	Parameter O1_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O2_BASE_ADDR bound to: 268500992 - type: integer 
+	Parameter O2_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O3_BASE_ADDR bound to: 268509184 - type: integer 
+	Parameter O3_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O4_BASE_ADDR bound to: 268513280 - type: integer 
+	Parameter O4_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O5_BASE_ADDR bound to: 268517376 - type: integer 
+	Parameter O5_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O6_BASE_ADDR bound to: 268521472 - type: integer 
+	Parameter O6_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O7_BASE_ADDR bound to: 268578816 - type: integer 
+	Parameter O7_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O8_BASE_ADDR bound to: 268582912 - type: integer 
+	Parameter O8_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O9_BASE_ADDR bound to: 268587008 - type: integer 
+	Parameter O9_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O10_BASE_ADDR bound to: 268648448 - type: integer 
+	Parameter O10_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O11_BASE_ADDR bound to: 268652544 - type: integer 
+	Parameter O11_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O12_BASE_ADDR bound to: 285212672 - type: integer 
+	Parameter O12_BASE_REGION_LSB bound to: 24 - type: integer 
+	Parameter O13_BASE_ADDR bound to: 268697600 - type: integer 
+	Parameter O13_BASE_REGION_LSB bound to: 16 - type: integer 
+	Parameter O14_BASE_ADDR bound to: 4096 - type: integer 
+	Parameter O14_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O15_BASE_ADDR bound to: 4096 - type: integer 
+	Parameter O15_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter BASE_REGION_MSB bound to: 31 - type: integer 
+	Parameter SPLT_I_NUM bound to: 17 - type: integer 
+	Parameter OUTS_CNT_W bound to: 1 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter CMD_CUT_READY bound to: 1 - type: integer 
+	Parameter RSP_CUT_READY bound to: 1 - type: integer 
+	Parameter CMD_DP bound to: 2 - type: integer 
+	Parameter RSP_DP bound to: 2 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter CMD_PACK_W bound to: 78 - type: integer 
+	Parameter RSP_PACK_W bound to: 35 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 2 - type: integer 
+	Parameter DW bound to: 78 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 2 - type: integer 
+	Parameter DW bound to: 35 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter SPLT_NUM bound to: 17 - type: integer 
+	Parameter SPLT_PTR_1HOT bound to: 1 - type: integer 
+	Parameter SPLT_PTR_W bound to: 17 - type: integer 
+	Parameter ALLOW_DIFF bound to: 0 - type: integer 
+	Parameter ALLOW_0CYCL_RSP bound to: 1 - type: integer 
+	Parameter VLD_MSK_PAYLOAD bound to: 1 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 17 - type: integer 
+	Parameter DW bound to: 17 - type: integer 
+	Parameter DW bound to: 65 - type: integer 
+	Parameter SYNC_DP bound to: 2 - type: integer 
+	Parameter DW bound to: 65 - type: integer 
+	Parameter DW bound to: 33 - type: integer 
+	Parameter SYNC_DP bound to: 2 - type: integer 
+	Parameter DW bound to: 33 - type: integer 
+	Parameter AXI_FIFO_DP bound to: 2 - type: integer 
+	Parameter AXI_FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 1 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 1 - type: integer 
+	Parameter CHNL_FIFO_DP bound to: 2 - type: integer 
+	Parameter CHNL_FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter AR_CHNL_W bound to: 50 - type: integer 
+	Parameter AW_CHNL_W bound to: 50 - type: integer 
+	Parameter W_CHNL_W bound to: 37 - type: integer 
+	Parameter R_CHNL_W bound to: 35 - type: integer 
+	Parameter B_CHNL_W bound to: 2 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 2 - type: integer 
+	Parameter DW bound to: 50 - type: integer 
+	Parameter DW bound to: 50 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 2 - type: integer 
+	Parameter DW bound to: 37 - type: integer 
+	Parameter DW bound to: 37 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 2 - type: integer 
+	Parameter DW bound to: 2 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 8 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 0 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter ARST_LVL bound to: 1'b0 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/i2c_master_top.v:215]
+	Parameter ST_IDLE bound to: 5'b00000 
+	Parameter ST_START bound to: 5'b00001 
+	Parameter ST_READ bound to: 5'b00010 
+	Parameter ST_WRITE bound to: 5'b00100 
+	Parameter ST_ACK bound to: 5'b01000 
+	Parameter ST_STOP bound to: 5'b10000 
+	Parameter idle bound to: 17'b00000000000000000 
+	Parameter start_a bound to: 17'b00000000000000001 
+	Parameter start_b bound to: 17'b00000000000000010 
+	Parameter start_c bound to: 17'b00000000000000100 
+	Parameter start_d bound to: 17'b00000000000001000 
+	Parameter start_e bound to: 17'b00000000000010000 
+	Parameter stop_a bound to: 17'b00000000000100000 
+	Parameter stop_b bound to: 17'b00000000001000000 
+	Parameter stop_c bound to: 17'b00000000010000000 
+	Parameter stop_d bound to: 17'b00000000100000000 
+	Parameter rd_a bound to: 17'b00000001000000000 
+	Parameter rd_b bound to: 17'b00000010000000000 
+	Parameter rd_c bound to: 17'b00000100000000000 
+	Parameter rd_d bound to: 17'b00001000000000000 
+	Parameter wr_a bound to: 17'b00010000000000000 
+	Parameter wr_b bound to: 17'b00100000000000000 
+	Parameter wr_c bound to: 17'b01000000000000000 
+	Parameter wr_d bound to: 17'b10000000000000000 
+	Parameter MROM_AW bound to: 12 - type: integer 
+	Parameter MROM_DP bound to: 1024 - type: integer 
+	Parameter ICB_FIFO_DP bound to: 2 - type: integer 
+	Parameter ICB_FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter SPLT_FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter SPLT_FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter O0_BASE_ADDR bound to: 0 - type: integer 
+	Parameter O0_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O1_BASE_ADDR bound to: 4096 - type: integer 
+	Parameter O1_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O2_BASE_ADDR bound to: 131072 - type: integer 
+	Parameter O2_BASE_REGION_LSB bound to: 17 - type: integer 
+	Parameter O3_BASE_ADDR bound to: 536870912 - type: integer 
+	Parameter O3_BASE_REGION_LSB bound to: 29 - type: integer 
+	Parameter O4_BASE_ADDR bound to: -2147483648 - type: integer 
+	Parameter O4_BASE_REGION_LSB bound to: 31 - type: integer 
+	Parameter O5_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter O5_BASE_REGION_LSB bound to: 28 - type: integer 
+	Parameter O6_BASE_ADDR bound to: 0 - type: integer 
+	Parameter O6_BASE_REGION_LSB bound to: 0 - type: integer 
+	Parameter O7_BASE_ADDR bound to: 0 - type: integer 
+	Parameter O7_BASE_REGION_LSB bound to: 0 - type: integer 
+	Parameter BASE_REGION_MSB bound to: 31 - type: integer 
+	Parameter SPLT_I_NUM bound to: 9 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter SPLT_NUM bound to: 9 - type: integer 
+	Parameter SPLT_PTR_1HOT bound to: 1 - type: integer 
+	Parameter SPLT_PTR_W bound to: 9 - type: integer 
+	Parameter ALLOW_DIFF bound to: 0 - type: integer 
+	Parameter ALLOW_0CYCL_RSP bound to: 1 - type: integer 
+	Parameter VLD_MSK_PAYLOAD bound to: 1 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 9 - type: integer 
+	Parameter DW bound to: 9 - type: integer 
+	Parameter AW bound to: 12 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter DP bound to: 1024 - type: integer 
+	Parameter AW bound to: 12 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter DP bound to: 1024 - type: integer 
+	Parameter AXI_FIFO_DP bound to: 2 - type: integer 
+	Parameter AXI_FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 4 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 1 - type: integer 
+	Parameter DP bound to: 4 - type: integer 
+	Parameter DW bound to: 1 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter SUPPORT_JTAG_DTM bound to: 1 - type: integer 
+	Parameter ASYNC_FF_LEVELS bound to: 2 - type: integer 
+	Parameter PC_SIZE bound to: 32 - type: integer 
+	Parameter HART_NUM bound to: 1 - type: integer 
+	Parameter HART_ID_W bound to: 1 - type: integer 
+	Parameter ASYNC_FF_LEVELS bound to: 2 - type: integer 
+	Parameter DEBUG_DATA_BITS bound to: 34 - type: integer 
+	Parameter DEBUG_ADDR_BITS bound to: 5 - type: integer 
+	Parameter DEBUG_OP_BITS bound to: 2 - type: integer 
+	Parameter JTAG_VERSION bound to: 4'b0001 
+	Parameter DBUS_IDLE_CYCLES bound to: 3'b101 
+	Parameter IR_BITS bound to: 5 - type: integer 
+	Parameter DEBUG_VERSION bound to: 0 - type: integer 
+	Parameter TEST_LOGIC_RESET bound to: 4'b0000 
+	Parameter RUN_TEST_IDLE bound to: 4'b0001 
+	Parameter SELECT_DR bound to: 4'b0010 
+	Parameter CAPTURE_DR bound to: 4'b0011 
+	Parameter SHIFT_DR bound to: 4'b0100 
+	Parameter EXIT1_DR bound to: 4'b0101 
+	Parameter PAUSE_DR bound to: 4'b0110 
+	Parameter EXIT2_DR bound to: 4'b0111 
+	Parameter UPDATE_DR bound to: 4'b1000 
+	Parameter SELECT_IR bound to: 4'b1001 
+	Parameter CAPTURE_IR bound to: 4'b1010 
+	Parameter SHIFT_IR bound to: 4'b1011 
+	Parameter EXIT1_IR bound to: 4'b1100 
+	Parameter PAUSE_IR bound to: 4'b1101 
+	Parameter EXIT2_IR bound to: 4'b1110 
+	Parameter UPDATE_IR bound to: 4'b1111 
+	Parameter REG_BYPASS bound to: 5'b11111 
+	Parameter REG_IDCODE bound to: 5'b00001 
+	Parameter REG_DEBUG_ACCESS bound to: 5'b10001 
+	Parameter REG_DTM_INFO bound to: 5'b10000 
+	Parameter DBUS_REG_BITS bound to: 41 - type: integer 
+	Parameter DBUS_REQ_BITS bound to: 41 - type: integer 
+	Parameter DBUS_RESP_BITS bound to: 36 - type: integer 
+	Parameter SHIFT_REG_BITS bound to: 41 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_jtag_dtm.v:237]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_jtag_dtm.v:295]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ipshared/906d/src/sirv_jtag_dtm.v:308]
+	Parameter DW bound to: 41 - type: integer 
+	Parameter SYNC_DP bound to: 2 - type: integer 
+	Parameter DW bound to: 41 - type: integer 
+	Parameter DW bound to: 36 - type: integer 
+	Parameter SYNC_DP bound to: 2 - type: integer 
+	Parameter DW bound to: 36 - type: integer 
+	Parameter PC_SIZE bound to: 32 - type: integer 
+	Parameter DW bound to: 36 - type: integer 
+	Parameter SYNC_DP bound to: 2 - type: integer 
+	Parameter DW bound to: 41 - type: integer 
+	Parameter SYNC_DP bound to: 2 - type: integer 
+	Parameter ASYNC_FF_LEVELS bound to: 2 - type: integer 
+	Parameter CMD_PACK_W bound to: 65 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter SYNC_DP bound to: 2 - type: integer 
+	Parameter DW bound to: 65 - type: integer 
+	Parameter SYNC_DP bound to: 2 - type: integer 
+	Parameter ICB_FIFO_DP bound to: 0 - type: integer 
+	Parameter ICB_FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter AW bound to: 15 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter SPLT_FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter SPLT_FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter O0_BASE_ADDR bound to: 15'b000001000000000 
+	Parameter O0_BASE_REGION_LSB bound to: 8 - type: integer 
+	Parameter BASE_REGION_MSB bound to: 14 - type: integer 
+	Parameter SPLT_I_NUM bound to: 2 - type: integer 
+	Parameter OUTS_CNT_W bound to: 1 - type: integer 
+	Parameter AW bound to: 15 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter CMD_CUT_READY bound to: 1 - type: integer 
+	Parameter RSP_CUT_READY bound to: 1 - type: integer 
+	Parameter CMD_DP bound to: 0 - type: integer 
+	Parameter RSP_DP bound to: 0 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter CMD_PACK_W bound to: 61 - type: integer 
+	Parameter RSP_PACK_W bound to: 35 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 0 - type: integer 
+	Parameter DW bound to: 61 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 0 - type: integer 
+	Parameter DW bound to: 35 - type: integer 
+	Parameter AW bound to: 15 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter SPLT_NUM bound to: 2 - type: integer 
+	Parameter SPLT_PTR_1HOT bound to: 1 - type: integer 
+	Parameter SPLT_PTR_W bound to: 2 - type: integer 
+	Parameter ALLOW_DIFF bound to: 0 - type: integer 
+	Parameter ALLOW_0CYCL_RSP bound to: 1 - type: integer 
+	Parameter VLD_MSK_PAYLOAD bound to: 1 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 2 - type: integer 
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_read_reg" dissolved into registers
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_index_reg" dissolved into registers
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_data_reg" dissolved into registers
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_mask_reg" dissolved into registers
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_extra_reg" dissolved into registers
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 2538.168 ; gain = 139.480 ; free physical = 1490 ; free virtual = 3423
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 2555.980 ; gain = 157.293 ; free physical = 1525 ; free virtual = 3465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 2555.980 ; gain = 157.293 ; free physical = 1525 ; free virtual = 3465
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.41 ; elapsed = 00:00:00.44 . Memory (MB): peak = 2555.980 ; gain = 0.000 ; free physical = 1443 ; free virtual = 3384
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/reset_sys_board.xdc] for cell 'inst/ip_reset_sys/U0'
+Finished Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/reset_sys_board.xdc] for cell 'inst/ip_reset_sys/U0'
+Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/reset_sys.xdc] for cell 'inst/ip_reset_sys/U0'
+Finished Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/reset_sys.xdc] for cell 'inst/ip_reset_sys/U0'
+Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/mmcm/mmcm_board.xdc] for cell 'inst/ip_mmcm/inst'
+Finished Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/mmcm/mmcm_board.xdc] for cell 'inst/ip_mmcm/inst'
+Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/mmcm/mmcm.xdc] for cell 'inst/ip_mmcm/inst'
+Finished Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/mmcm/mmcm.xdc] for cell 'inst/ip_mmcm/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/mmcm/mmcm.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_HBIRD_E203_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_HBIRD_E203_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/arty-master.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/arty-master.xdc] for cell 'inst'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/design_1_HBIRD_E203_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/design_1_HBIRD_E203_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/design_1_HBIRD_E203_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_HBIRD_E203_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_HBIRD_E203_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2663.801 ; gain = 0.000 ; free physical = 1299 ; free virtual = 3240
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  FDR => FDRE: 12 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 11 instances
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.20 . Memory (MB): peak = 2663.801 ; gain = 0.000 ; free physical = 1295 ; free virtual = 3236
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:48 . Memory (MB): peak = 2663.801 ; gain = 265.113 ; free physical = 1329 ; free virtual = 3270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z030fbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:48 . Memory (MB): peak = 2663.801 ; gain = 265.113 ; free physical = 1329 ; free virtual = 3270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ip_mmcm/inst. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/design_1_HBIRD_E203_0_0_synth_1/dont_touch.xdc, line 14).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ip_reset_sys/U0. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/design_1_HBIRD_E203_0_0_synth_1/dont_touch.xdc, line 22).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/design_1_HBIRD_E203_0_0_synth_1/dont_touch.xdc, line 29).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ip_reset_sys. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ip_mmcm. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:48 . Memory (MB): peak = 2663.801 ; gain = 265.113 ; free physical = 1329 ; free virtual = 3270
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'i2c_master_bit_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'i2c_master_byte_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'jtagStateReg_reg' in module 'sirv_jtag_dtm'
+WARNING: [Synth 8-6841] Block RAM (mem[1].non_last.mem_r_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (13) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+WARNING: [Synth 8-6841] Block RAM (mem[1].non_last.mem_r_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                            00000 |                00000000000000000
+                 start_a |                            00001 |                00000000000000001
+                 start_b |                            00010 |                00000000000000010
+                 start_c |                            00011 |                00000000000000100
+                 start_d |                            00100 |                00000000000001000
+                 start_e |                            00101 |                00000000000010000
+                  stop_a |                            00110 |                00000000000100000
+                  stop_b |                            00111 |                00000000001000000
+                  stop_c |                            01000 |                00000000010000000
+                  stop_d |                            01001 |                00000000100000000
+                    wr_a |                            01010 |                00010000000000000
+                    wr_b |                            01011 |                00100000000000000
+                    wr_c |                            01100 |                01000000000000000
+                    wr_d |                            01101 |                10000000000000000
+                    rd_a |                            01110 |                00000001000000000
+                    rd_b |                            01111 |                00000010000000000
+                    rd_c |                            10000 |                00000100000000000
+                    rd_d |                            10001 |                00001000000000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'sequential' in module 'i2c_master_bit_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                              000 |                            00000
+                ST_START |                              001 |                            00001
+                 ST_READ |                              010 |                            00010
+                ST_WRITE |                              011 |                            00100
+                  ST_ACK |                              100 |                            01000
+                 ST_STOP |                              101 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'sequential' in module 'i2c_master_byte_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        TEST_LOGIC_RESET |                 0000000000000001 |                             0000
+           RUN_TEST_IDLE |                 0000000000000010 |                             0001
+               SELECT_DR |                 0000000000000100 |                             0010
+               SELECT_IR |                 0000000000001000 |                             1001
+              CAPTURE_IR |                 0000000000010000 |                             1010
+                SHIFT_IR |                 0000000000100000 |                             1011
+                EXIT1_IR |                 0000000001000000 |                             1100
+                PAUSE_IR |                 0000000010000000 |                             1101
+                EXIT2_IR |                 0000000100000000 |                             1110
+               UPDATE_IR |                 0000001000000000 |                             1111
+              CAPTURE_DR |                 0000010000000000 |                             0011
+                SHIFT_DR |                 0000100000000000 |                             0100
+                EXIT1_DR |                 0001000000000000 |                             0101
+                PAUSE_DR |                 0010000000000000 |                             0110
+                EXIT2_DR |                 0100000000000000 |                             0111
+               UPDATE_DR |                 1000000000000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'jtagStateReg_reg' using encoding 'one-hot' in module 'sirv_jtag_dtm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:49 ; elapsed = 00:01:05 . Memory (MB): peak = 2663.801 ; gain = 265.113 ; free physical = 1424 ; free virtual = 3370
+---------------------------------------------------------------------------------
+RAM Pipeline Warning: Read Address Register Found For RAM mem[1].non_last.mem_r_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM mem[1].non_last.mem_r_reg. We will not be able to pipeline it. This may degrade performance. 
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 1     
+	   2 Input   42 Bit       Adders := 1     
+	   3 Input   35 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 9     
+	   2 Input   27 Bit       Adders := 2     
+	   2 Input   26 Bit       Adders := 1     
+	   2 Input   19 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 7     
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 10    
+	   3 Input    3 Bit       Adders := 10    
+	   2 Input    3 Bit       Adders := 21    
+	   2 Input    2 Bit       Adders := 3     
+	   2 Input    1 Bit       Adders := 6     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input     27 Bit         XORs := 2     
+	   2 Input     19 Bit         XORs := 1     
+	   2 Input     16 Bit         XORs := 1     
+	   2 Input     10 Bit         XORs := 145   
+	   2 Input      6 Bit         XORs := 3     
+	   2 Input      4 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 75    
++---Registers : 
+	               91 Bit    Registers := 1     
+	               78 Bit    Registers := 5     
+	               65 Bit    Registers := 2     
+	               55 Bit    Registers := 1     
+	               54 Bit    Registers := 1     
+	               50 Bit    Registers := 8     
+	               44 Bit    Registers := 1     
+	               42 Bit    Registers := 1     
+	               41 Bit    Registers := 4     
+	               37 Bit    Registers := 4     
+	               36 Bit    Registers := 2     
+	               35 Bit    Registers := 9     
+	               33 Bit    Registers := 4     
+	               32 Bit    Registers := 104   
+	               30 Bit    Registers := 3     
+	               26 Bit    Registers := 3     
+	               24 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 16    
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 9     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 19    
+	                8 Bit    Registers := 33    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 7     
+	                5 Bit    Registers := 13    
+	                4 Bit    Registers := 43    
+	                3 Bit    Registers := 80    
+	                2 Bit    Registers := 53    
+	                1 Bit    Registers := 796   
++---RAMs : 
+	             512K Bit	(8192 X 64 bit)          RAMs := 1     
+	             512K Bit	(16384 X 32 bit)          RAMs := 1     
+	               64 Bit	(8 X 8 bit)          RAMs := 10    
++---Muxes : 
+	   2 Input   91 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 15    
+	   2 Input   54 Bit        Muxes := 1     
+	   3 Input   43 Bit        Muxes := 1     
+	   2 Input   42 Bit        Muxes := 3     
+	   2 Input   41 Bit        Muxes := 2     
+	   4 Input   41 Bit        Muxes := 2     
+	   3 Input   41 Bit        Muxes := 1     
+	   2 Input   35 Bit        Muxes := 4     
+	   2 Input   34 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 14    
+	   2 Input   32 Bit        Muxes := 83    
+	   3 Input   32 Bit        Muxes := 1     
+	   6 Input   32 Bit        Muxes := 1     
+	  32 Input   32 Bit        Muxes := 2     
+	   2 Input   31 Bit        Muxes := 3     
+	   2 Input   30 Bit        Muxes := 3     
+	   2 Input   27 Bit        Muxes := 5     
+	   2 Input   26 Bit        Muxes := 14    
+	   2 Input   19 Bit        Muxes := 2     
+	   2 Input   18 Bit        Muxes := 5     
+	   2 Input   17 Bit        Muxes := 1     
+	  18 Input   17 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 28    
+	   7 Input   16 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 1     
+	  16 Input   16 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 6     
+	   2 Input    9 Bit        Muxes := 18    
+	   2 Input    8 Bit        Muxes := 88    
+	   2 Input    7 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 23    
+	   4 Input    6 Bit        Muxes := 1     
+	   3 Input    6 Bit        Muxes := 6     
+	   2 Input    5 Bit        Muxes := 55    
+	  14 Input    5 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 2     
+	  24 Input    5 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 44    
+	   6 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 129   
+	   6 Input    3 Bit        Muxes := 1     
+	  15 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 95    
+	   3 Input    2 Bit        Muxes := 5     
+	   5 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 955   
+	  32 Input    1 Bit        Muxes := 4     
+	   8 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 6     
+	  16 Input    1 Bit        Muxes := 3     
+	  18 Input    1 Bit        Muxes := 6     
+	   6 Input    1 Bit        Muxes := 6     
+	   3 Input    1 Bit        Muxes := 6     
+	 128 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 400 (col length:80)
+BRAMs: 530 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+RAM Pipeline Warning: Read Address Register Found For RAM u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg. We will not be able to pipeline it. This may degrade performance. 
+WARNING: [Synth 8-6841] Block RAM (u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (13) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+RAM Pipeline Warning: Read Address Register Found For RAM u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg. We will not be able to pipeline it. This may degrade performance. 
+WARNING: [Synth 8-6841] Block RAM (u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+RAM Pipeline Warning: Read Address Register Found For RAM u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg. We will not be able to pipeline it. This may degrade performance. 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:18:19 ; elapsed = 00:19:20 . Memory (MB): peak = 3934.566 ; gain = 1535.879 ; free physical = 2324 ; free virtual = 4300
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++--------------+----------------------+---------------+----------------+
+|Module Name   | RTL Object           | Depth x Width | Implemented As | 
++--------------+----------------------+---------------+----------------+
+|sirv_mrom     | mask_rom             | 1024x4        | LUT            | 
+|sirv_mrom_top | u_sirv_mrom/mask_rom | 1024x4        | LUT            | 
++--------------+----------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping	Report (see note below)
++------------------------------------------+--------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                               | RTL Object                                                                                 | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------------------------+--------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/u_e203_subsys_maini_1/u_e203_cpu_top | u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg | 8 K x 64(READ_FIRST)   | W |   | 8 K x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 16     | 
+|inst/u_e203_subsys_maini_1/u_e203_cpu_top | u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg | 16 K x 32(READ_FIRST)  | W |   | 16 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 16     | 
++------------------------------------------+--------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++-----------------------------------------------------------------+------------------------------------+-----------+----------------------+-------------+
+|Module Name                                                      | RTL Object                         | Inference | Size (Depth x Width) | Primitives  | 
++-----------------------------------------------------------------+------------------------------------+-----------+----------------------+-------------+
+|inst/u_e203_subsys_maini_2/u_e203_subsys_perips/u_sirv_uart0_top | u_sirv_uart/u_txq/ram_reg          | Implied   | 8 x 8                | RAM32M x 2	 | 
+|inst/u_e203_subsys_maini_2/u_e203_subsys_perips/u_sirv_uart0_top | u_sirv_uart/u_rxq/ram_reg          | Implied   | 8 x 8                | RAM32M x 2	 | 
+|inst/u_e203_subsys_maini_2/u_e203_subsys_perips/u_sirv_qspi0_top | u_sirv_flash_qspi/fifo/rxq/ram_reg | Implied   | 8 x 8                | RAM32M x 2	 | 
+|inst/u_e203_subsys_maini_2/u_e203_subsys_perips/u_sirv_qspi0_top | u_sirv_flash_qspi/fifo/txq/ram_reg | Implied   | 8 x 8                | RAM32M x 2	 | 
+|inst/u_e203_subsys_maini_2/u_e203_subsys_perips/u_sirv_uart1_top | u_sirv_uart/u_txq/ram_reg          | Implied   | 8 x 8                | RAM32M x 2	 | 
+|inst/u_e203_subsys_maini_2/u_e203_subsys_perips/u_sirv_uart1_top | u_sirv_uart/u_rxq/ram_reg          | Implied   | 8 x 8                | RAM32M x 2	 | 
+|inst/u_e203_subsys_maini_2/u_e203_subsys_perips/u_sirv_qspi1_top | u_sirv_qspi_4cs/fifo/txq/ram_reg   | Implied   | 8 x 8                | RAM32M x 2	 | 
+|inst/u_e203_subsys_maini_2/u_e203_subsys_perips/u_sirv_qspi1_top | u_sirv_qspi_4cs/fifo/rxq/ram_reg   | Implied   | 8 x 8                | RAM32M x 2	 | 
+|inst/u_e203_subsys_maini_2/u_e203_subsys_perips/u_sirv_qspi2_top | u_sirv_qspi_1cs/fifo/txq/ram_reg   | Implied   | 8 x 8                | RAM32M x 2	 | 
+|inst/u_e203_subsys_maini_2/u_e203_subsys_perips/u_sirv_qspi2_top | u_sirv_qspi_1cs/fifo/rxq/ram_reg   | Implied   | 8 x 8                | RAM32M x 2	 | 
++-----------------------------------------------------------------+------------------------------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 49 of /home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/reset_sys.xdc. [/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.gen/sources_1/bd/design_1/ip/design_1_HBIRD_E203_0_0/src/reset_sys/reset_sys.xdc:49]
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:18:25 ; elapsed = 00:19:27 . Memory (MB): peak = 3934.566 ; gain = 1535.879 ; free physical = 2223 ; free virtual = 4199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:19:59 ; elapsed = 00:21:02 . Memory (MB): peak = 3934.566 ; gain = 1535.879 ; free physical = 2091 ; free virtual = 4068
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++------------------------------------------+--------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                               | RTL Object                                                                                 | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------------------------+--------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/u_e203_subsys_maini_1/u_e203_cpu_top | u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg | 8 K x 64(READ_FIRST)   | W |   | 8 K x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 16     | 
+|inst/u_e203_subsys_maini_1/u_e203_cpu_top | u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg | 16 K x 32(READ_FIRST)  | W |   | 16 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 16     | 
++------------------------------------------+--------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping	Report
++-----------------------------------------------------------------+------------------------------------+-----------+----------------------+-------------+
+|Module Name                                                      | RTL Object                         | Inference | Size (Depth x Width) | Primitives  | 
++-----------------------------------------------------------------+------------------------------------+-----------+----------------------+-------------+
+|inst/u_e203_subsys_maini_2/u_e203_subsys_perips/u_sirv_uart0_top | u_sirv_uart/u_txq/ram_reg          | Implied   | 8 x 8                | RAM32M x 2	 | 
+|inst/u_e203_subsys_maini_2/u_e203_subsys_perips/u_sirv_uart0_top | u_sirv_uart/u_rxq/ram_reg          | Implied   | 8 x 8                | RAM32M x 2	 | 
+|inst/u_e203_subsys_maini_2/u_e203_subsys_perips/u_sirv_qspi0_top | u_sirv_flash_qspi/fifo/rxq/ram_reg | Implied   | 8 x 8                | RAM32M x 2	 | 
+|inst/u_e203_subsys_maini_2/u_e203_subsys_perips/u_sirv_qspi0_top | u_sirv_flash_qspi/fifo/txq/ram_reg | Implied   | 8 x 8                | RAM32M x 2	 | 
+|inst/u_e203_subsys_maini_2/u_e203_subsys_perips/u_sirv_uart1_top | u_sirv_uart/u_txq/ram_reg          | Implied   | 8 x 8                | RAM32M x 2	 | 
+|inst/u_e203_subsys_maini_2/u_e203_subsys_perips/u_sirv_uart1_top | u_sirv_uart/u_rxq/ram_reg          | Implied   | 8 x 8                | RAM32M x 2	 | 
+|inst/u_e203_subsys_maini_2/u_e203_subsys_perips/u_sirv_qspi1_top | u_sirv_qspi_4cs/fifo/txq/ram_reg   | Implied   | 8 x 8                | RAM32M x 2	 | 
+|inst/u_e203_subsys_maini_2/u_e203_subsys_perips/u_sirv_qspi1_top | u_sirv_qspi_4cs/fifo/rxq/ram_reg   | Implied   | 8 x 8                | RAM32M x 2	 | 
+|inst/u_e203_subsys_maini_2/u_e203_subsys_perips/u_sirv_qspi2_top | u_sirv_qspi_1cs/fifo/txq/ram_reg   | Implied   | 8 x 8                | RAM32M x 2	 | 
+|inst/u_e203_subsys_maini_2/u_e203_subsys_perips/u_sirv_qspi2_top | u_sirv_qspi_1cs/fifo/rxq/ram_reg   | Implied   | 8 x 8                | RAM32M x 2	 | 
++-----------------------------------------------------------------+------------------------------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_4_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_4_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_5_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_5_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_6_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_6_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_7_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_7_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:20:11 ; elapsed = 00:21:15 . Memory (MB): peak = 3934.566 ; gain = 1535.879 ; free physical = 2237 ; free virtual = 4213
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:20:17 ; elapsed = 00:21:21 . Memory (MB): peak = 3934.566 ; gain = 1535.879 ; free physical = 2236 ; free virtual = 4212
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:20:17 ; elapsed = 00:21:21 . Memory (MB): peak = 3934.566 ; gain = 1535.879 ; free physical = 2236 ; free virtual = 4212
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:20:21 ; elapsed = 00:21:25 . Memory (MB): peak = 3934.566 ; gain = 1535.879 ; free physical = 2233 ; free virtual = 4210
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:20:21 ; elapsed = 00:21:25 . Memory (MB): peak = 3934.566 ; gain = 1535.879 ; free physical = 2233 ; free virtual = 4210
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:20:22 ; elapsed = 00:21:26 . Memory (MB): peak = 3934.566 ; gain = 1535.879 ; free physical = 2233 ; free virtual = 4210
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:20:22 ; elapsed = 00:21:26 . Memory (MB): peak = 3934.566 ; gain = 1535.879 ; free physical = 2233 ; free virtual = 4210
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|system      | dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/dwakeup_deglitch/sync_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+-----------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     3|
+|2     |CARRY4     |   222|
+|3     |LUT1       |    65|
+|4     |LUT2       |   719|
+|5     |LUT3       |  1367|
+|6     |LUT4       |  1672|
+|7     |LUT5       |  2345|
+|8     |LUT6       |  4329|
+|9     |MMCME2_ADV |     1|
+|10    |MUXF7      |   302|
+|11    |MUXF8      |    41|
+|12    |PULLUP     |     3|
+|13    |RAM32M     |    20|
+|14    |RAMB36E1   |    32|
+|16    |SRL16      |     1|
+|17    |SRL16E     |     1|
+|18    |FDCE       |  3561|
+|19    |FDPE       |   308|
+|20    |FDRE       |  2752|
+|21    |FDSE       |    54|
+|22    |IBUFDS     |     1|
+|23    |IOBUF      |    10|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:20:22 ; elapsed = 00:21:26 . Memory (MB): peak = 3934.566 ; gain = 1535.879 ; free physical = 2233 ; free virtual = 4210
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:20:14 ; elapsed = 00:21:18 . Memory (MB): peak = 3934.566 ; gain = 1428.059 ; free physical = 2282 ; free virtual = 4259
+Synthesis Optimization Complete : Time (s): cpu = 00:20:22 ; elapsed = 00:21:26 . Memory (MB): peak = 3934.574 ; gain = 1535.879 ; free physical = 2282 ; free virtual = 4259
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.36 . Memory (MB): peak = 3934.574 ; gain = 0.000 ; free physical = 2366 ; free virtual = 4342
+INFO: [Netlist 29-17] Analyzing 630 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3934.574 ; gain = 0.000 ; free physical = 2317 ; free virtual = 4293
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 31 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 10 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 20 instances
+  SRL16 => SRL16E: 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+291 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:20:39 ; elapsed = 00:21:37 . Memory (MB): peak = 3934.574 ; gain = 1535.977 ; free physical = 2483 ; free virtual = 4460
+INFO: [Common 17-1381] The checkpoint '/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/design_1_HBIRD_E203_0_0_synth_1/design_1_HBIRD_E203_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_HBIRD_E203_0_0, cache-ID = 1ed13c5a1c9aa019
+INFO: [Coretcl 2-1174] Renamed 905 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/michelle/Desktop/Xilinx/vivado/Hbird_axi/Hbird_axi.runs/design_1_HBIRD_E203_0_0_synth_1/design_1_HBIRD_E203_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_HBIRD_E203_0_0_utilization_synth.rpt -pb design_1_HBIRD_E203_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul  4 17:24:52 2022...

@@ -137,6 +137,9 @@ typedef enum IRQn
     PLIC_PWM2CMP2_IRQn       = 50,               /*!< Device external Interrupt 50 PWM2 compare2 */
     PLIC_PWM2CMP3_IRQn       = 51,               /*!< Device external Interrupt 51 PWM2 compare3 */
     PLIC_I2C_IRQn            = 52,               /*!< Device external Interrupt 52 I2C */
+
+	PLIC_USR_0_IRQn			 = 53,
+	PLIC_USR_1_IRQn			 = 54,
     PLIC_INT_MAX,
 } IRQn_Type;
 
@@ -193,7 +196,7 @@ typedef enum EXCn {
 #else
 #define __PLIC_BASEADDR           0x0C000000UL          /*!< Set to PLIC baseaddr of your device */
 #endif
-#define __PLIC_INTNUM             53                    /*!< Set to 1 - 1024, total interrupt sources of PLIC Unit */
+#define __PLIC_INTNUM             55                    /*!< Set to 1 - 1024, total interrupt sources of PLIC Unit */
 
 #define __SYSTIMER_PRESENT        1                     /*!< Set to 1 if System CLINT Timer is present */
 #ifdef SIMULATION_XLSPIKE
