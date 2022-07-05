@@ -1,0 +1,5 @@
+Move data b/w BRAM and BRAM by using CDMA;
+Address space for AXI is extended;
+two interrupt interfaces are added;  namely PLIC_USR_1_IRQn and PLIC_USR_0_IRQn;
+There is an existing bug: interrupt signal will trigger twice, which can be elimiate on software level, for more details, please refer to helloworld.c
+NOTICE: Connect THE UART0_tx on the debugger to UART_rx on our evaluation board; UART0_rx to UART_tx;
